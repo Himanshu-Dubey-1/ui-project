@@ -12,19 +12,19 @@ export function FloatingNavDemo() {
     },
     {
       name: "Products",
-      link: "/Products",
+      link: "#",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Resources",
-      link: "/Resources",
+      link: "#",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
     {
       name: "Pricing",
-      link: "/Pricing",
+      link: "#",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
