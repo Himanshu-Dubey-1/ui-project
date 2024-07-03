@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    base:"/ui-project/",
+    output:"export",
 };
 
 export default nextConfig;
