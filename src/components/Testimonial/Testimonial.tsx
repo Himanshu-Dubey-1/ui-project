@@ -9,7 +9,7 @@ interface TestimonialProps {
   testimonial: string;
   designation: string;
   highlighted: boolean;
-  image: string;
+  image: any;
 }
 
 const Testimonial: React.FC<TestimonialProps> = ({ name, testimonial, designation, highlighted,image }) => {
