@@ -1,36 +1,41 @@
-import OrbitingCircles from "./orbiting-circles";
+import OrbitingCircles from "@/magicui/orbiting-circles";
 import Image from "next/image";
-import Android from "../../../images/android.png"
-import aws from "../../../images/aws.png"
-import cs from "../../../images/cs.png"
-import flutter from "../../../images/flutter.png"
-import html from "../../../images/html.png"
-import js from "../../../images/js.png"
-import react from "../../../images/react.png"
-import arrow from "../../../images/arrow.png"
-
-
-
+import Android from "@/images/android.png";
+import aws from "@/images/aws.png";
+import cs from "@/images/cs.png";
+import flutter from "@/images/flutter.png";
+import html from "@/images/html.png";
+import js from "@/images/js.png";
+import react from "@/images/react.png";
+import arrow from "@/images/arrow.png";
 
 export function OrbitingCirclesDemo() {
   return (
-    <div className="relative flex h-[1200px] w-full items-center justify-center overflow-hidden  rounded-lg border bg-[#f5f2ff] md:shadow-xl">
-     
-      <div className="flex flex-col justify-center items-center text-center p-10 ">
-        <span className="font-bold text-7xl my-4">We've really sped our workflow</span>
+    <div className="relative flex h-[750px] w-full items-center justify-center overflow-hidden  rounded-lg border bg-white ">
+      <div className="flex flex-col justify-center items-center text-center p-10 z-[5000]">
+        <button className="border border-[#D0D5DD] rounded-xl text-[#344054] text-xl p-2">
+          <span className="border border-[#D0D5DD] rounded-lg py-1 px-3 mr-3">
+            new
+          </span>
+          check out the job updates 🡢
+        </button>
+        <span className="font-bold text-7xl my-4">We Provide Internships</span>
 
-        <div className="max-w-[55rem] mb-10"> 
-            <span><span className="font-bold">We’ve just released a new update!</span>Check out the all new dashboard view. Pages and now load faster.you can try us for free for 30 days
-            </span><br /><br />
-            <span>Join 4,000+ companies already growing</span>
+        <div className="max-w-[55rem] mb-10 mt-6">
+          Unlock your potential with our comprehensive training. Track your
+          progress in real-time, learn from industry experts, and enjoy
+          affordable, high-quality education. Trusted by over 4,000 students.
         </div>
 
         <div className="md:flex">
-            <button className="border border-[#D0D5DD] px-2 gap-2 flex items-center py-3 font-bold text-[#344054] mt-3 rounded-md mx-1"><Image src={arrow} 
-                    alt="arrow" width={20}height={20} /> Start Learning Today</button>
-            <button className="border border-[#BDB4FE] bg-[#7F6EFC] text-white px-4 py-3 font-bold mt-3 rounded-md mx-1">Join Now</button>
+          <button className="border border-[#D0D5DD] px-2 gap-2 flex items-center py-3 font-bold text-[#344054] mt-3 rounded-md mx-1">
+            <Image src={arrow} alt="arrow" width={20} height={20} /> Start
+            Learning Today
+          </button>
+          <button className="border border-[#BDB4FE] bg-[#7F6EFC] text-white px-4 py-3 font-bold mt-3 rounded-md mx-1">
+            Join Now
+          </button>
         </div>
-       
       </div>
 
       {/* 1st circle */}
@@ -52,36 +57,31 @@ export function OrbitingCirclesDemo() {
         <Icons.gitHub />
       </OrbitingCircles>
 
-        {/* 2nd circle */}
+      {/* 2nd circle */}
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={300}
         duration={20}
-        
       >
-        <Image src={Android}  
-                    alt="android" /> 
+        <Image src={Android} alt="android" />
       </OrbitingCircles>
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={300}
         duration={20}
         delay={20}
-        
       >
-        <Image src={aws}  
-                    alt="aws" /> 
+        <Image src={aws} alt="aws" />
       </OrbitingCircles>
 
-        {/* 3rd circle */}
+      {/* 3rd circle */}
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={400}
         duration={20}
         reverse
       >
-       <Image src={cs}  
-                    alt="cs" /> 
+        <Image src={cs} alt="cs" />
       </OrbitingCircles>
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
@@ -90,96 +90,77 @@ export function OrbitingCirclesDemo() {
         delay={20}
         reverse
       >
-        <Image src={flutter}  
-                    alt="flutter" /> 
+        <Image src={flutter} alt="flutter" />
       </OrbitingCircles>
 
-        {/* 4th circle */}
+      {/* 4th circle */}
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={500}
         duration={20}
-        
       >
-        <Image src={html}  
-                    alt="html" /> 
+        <Image src={html} alt="html" />
       </OrbitingCircles>
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={500}
         duration={20}
         delay={15}
-        
       >
-       <Image src={js}  
-                    alt="js" /> 
+        <Image src={js} alt="js" />
       </OrbitingCircles>
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={500}
         duration={20}
         delay={25}
-        
       >
-       <Image src={react}  
-                    alt="react" /> 
+        <Image src={react} alt="react" />
       </OrbitingCircles>
 
-        {/* 5th circle */}
+      {/* 5th circle */}
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={600}
         duration={20}
         reverse
-      >
-      </OrbitingCircles>
+      ></OrbitingCircles>
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={600}
         duration={20}
         delay={20}
         reverse
-      >
-      
-      </OrbitingCircles>
+      ></OrbitingCircles>
 
-        {/* 6th circle */}
+      {/* 6th circle */}
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={700}
         duration={20}
         reverse
-      >
-     
-      </OrbitingCircles>
+      ></OrbitingCircles>
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={700}
         duration={20}
         delay={20}
         reverse
-      >
-       
-      </OrbitingCircles>
-
+      ></OrbitingCircles>
 
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={850}
         duration={20}
         reverse
-      >
-     
-      </OrbitingCircles>
+      ></OrbitingCircles>
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={850}
         duration={20}
         delay={20}
         reverse
-      >
-       
-      </OrbitingCircles>
+      ></OrbitingCircles>
     </div>
   );
 }

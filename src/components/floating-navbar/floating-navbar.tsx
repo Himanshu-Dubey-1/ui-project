@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import hamburger from "../../../images/hamburger.png"
+import hamburger from "@/images/hamburger.png"
+import Kampkode from "@/images/Kampkode.png"
 import React, { useState } from "react";
 import {
   motion,
@@ -8,7 +9,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
-import { cn } from "../../utils/cn";
+import { cn } from "@/utils/cn";
 import Link from "next/link";
 
 export const FloatingNav = ({
@@ -61,14 +62,19 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex w-auto fixed md:top-7 top-3 inset-x-0 md:mx-10 mx-0 md:border  md:drop-shadow-xl md:border-transparent md:dark:border-white/[0.2] rounded-2xl md:dark:bg-black md:bg-white md:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] md:z-[5000] pr-2 pl-8 py-3  items-center justify-between space-x-4",
+          "flex w-auto fixed md:top-7 top-3 inset-x-0 md:mx-10 mx-0 md:border  md:drop-shadow-xl md:border-transparent md:dark:border-white/[0.2] rounded-2xl md:dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-3  items-center justify-between space-x-4",
           className
         )}
       >
       
        {/* div for LOGO  */}
-      <div className="text-3xl">
-        <span className="text-[#7D6EEB]">N</span>AV<span className="text-[#7D6EEB]">B</span>AR
+      <div className=" text-2xl">
+      {/* <Image src={Kampkode}  
+                    alt="KampKode" 
+                    height={42}
+                    width={200}
+                    className="h-10 w40"/>  */}
+       <span className="text-white bg-[#7D6EEB] px-2 rounded-md py-1 mr-3">K<span className="text-yellow-500 ">/</span>ꓘ</span><span className="text-[#7D6EEB]">K</span>AMP<span className="text-[#7D6EEB]">ꓘ</span>ODE 
       </div>
 
         {/* div for LIST  */}
@@ -124,7 +130,7 @@ export const FloatingNav = ({
               "relative dark:text-neutral-50 items-center flex text-center justify-center mt-4 space-x-1 text-[#1E003D] dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
           >
-            <span className="">{navItem.icon}</span>
+            <span className="hidden">{navItem.icon}</span>
             <span className="text-sm text-[#1E003D] font-bold">{navItem.name}</span>
           </Link>))}
           
